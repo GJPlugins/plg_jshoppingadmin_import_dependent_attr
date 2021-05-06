@@ -1,0 +1,2 @@
+# plg_jshoppingadmin_import_dependent_attr
+Импорт зависимых атрибутов для товаров

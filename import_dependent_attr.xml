@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.8" group="jshoppingadmin" method="upgrade">
+	<name>PLG_JSHOPPINGADMIN_IMPORT_DEPENDENT_ATTR</name>
+	<creationDate>06.05.2021</creationDate>
+	<author>Gartes</author>
+	<authorEmail>your@email.com</authorEmail>
+	<authorUrl>http://your.url.com</authorUrl>
+	<copyright>A copyright</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>1.0</version>
+	<description>PLG_JSHOPPINGADMIN_IMPORT_DEPENDENT_ATTR_XML_DESCRIPTION</description>
+
+	<!-- Scripts to run on installation -->
+	<scriptfile></scriptfile>
+
+	<!-- Language files -->
+
+
+	<!-- Plugin files -->
+	<files>
+		<folder>asset</folder>
+		<folder>field</folder>
+		<folder>language</folder>
+		<folder>Helpers</folder>
+		<filename plugin="import_dependent_attr">import_dependent_attr.php</filename>
+
+	</files>
+
+	<!-- Config parameter -->
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<fieldset addfieldpath="/libraries/GNZ11/Extensions/Fields" />
+				<field name="__v"
+					type="version"
+					path_xml="/plugins/import_dependent_attr.xml"
+					class="__v"
+					filter="raw" />
+				<field
+					name="sample"
+					type="text"
+					default="42"
+					label="PLG_JSHOPPINGADMIN_IMPORT_DEPENDENT_ATTR_SAMPLE_LABEL"
+					description="PLG_JSHOPPINGADMIN_IMPORT_DEPENDENT_ATTR_SAMPLE_DESCRIPTION"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+
+	<!-- Update servers -->
+	<updateservers>
+		<server type="extension" priority="1" name="import_dependent_attr"></server>
+	</updateservers>
+</extension>
